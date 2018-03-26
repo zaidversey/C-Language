@@ -1,0 +1,321 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fmodern\fcharset0 CourierNewPSMT;\f2\fmodern\fcharset0 CourierNewPS-BoldMT;
+\f3\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red14\green14\blue14;
+\red133\green35\blue2;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ri60
+
+\f0\b\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Platform\cf4 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sa260
+
+\b0\fs26 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 In order to complete this assignment, you will require the following packages :\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\f1 \cf4 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 libg1-mesa-dev
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\ls1\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 mesa-common-dev
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\ls1\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 freeglut3
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\ls1\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 freeglut3-dev
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\ls1\ilvl0
+\f1 \cb3 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 binutil-gold
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa260
+\cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 If using Ubuntu, use 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 apt-get install
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  command\cb1 \uc0\u8232 \u8232 \cb3 To check your OpenGL installation:\cb1 \
+\pard\pardeftab720\sa260
+
+\f2\b \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 root@luna:/home/Material/Particles# glxinfo | grep OpenGL
+\f0\b0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL vendor string: Intel Open Source Technology Center
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL renderer string: Mesa DRI Intel(R) Haswell Mobile
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL core profile version string: 3.3 (Core Profile) Mesa 11.2.0
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL core profile shading language version string: 3.30
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL core profile context flags: (none)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL core profile profile mask: core profile
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL core profile extensions:
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f2\b \cf5 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 OpenGL version string: 3.0 Mesa 11.2.0
+\f0\b0 \cf4 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL shading language version string: 1.30
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL context flags: (none)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL extensions:
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL ES profile version string: OpenGL ES 3.0 Mesa 11.2.0
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL ES profile shading language version string: OpenGL ES GLSL ES 3.00
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 OpenGL ES profile extensions:
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa260
+\cf4 \cb3 To check your mesa installation:\cb1 \
+\pard\pardeftab720\sa260
+
+\f2\b \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 root@luna:/home/Material/Particles# dpkg -l *mesa*
+\f0\b0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Desired=Unknown/Install/Remove/Purge/Hold
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ||/ Name\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Version\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Architecture\'a0\'a0\'a0\'a0\'a0\'a0 Description
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 +++-===========================-==================-==================-===========================================================
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 
+\f2\b \cf5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 libegl1-mesa
+\f1\b0 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 :amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 11.2.0-1ubuntu2.2\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the EGL API -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libegl1-mesa:i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 11.2.0-1ubuntu2.2\'a0 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the EGL API -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 libegl1-mesa-drivers\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgl1-mesa-dev:amd64\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL API -- GLX development fi
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgl1-mesa-dri:amd64\'a0\'a0\'a0\'a0\'a0\'a0 11.2.0-1ubuntu2.2\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL API -- DRI modules
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgl1-mesa-dri:i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0 11.2.0-1ubuntu2.2\'a0 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL API -- DRI modules
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 libgl1-mesa-dri-experimenta \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgl1-mesa-glx:amd64\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL API -- GLX runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgl1-mesa-glx:i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL API -- GLX runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libglapi-mesa:amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the GL API -- shared library
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libglapi-mesa:i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the GL API -- shared library
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgles1-mesa:amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL|ES 1.x API -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libgles2-mesa:amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenGL|ES 2.x API -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libglu1-mesa:amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 9.0.0-2.1\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa OpenGL utility library (GLU)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libglu1-mesa:i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 9.0.0-2.1\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa OpenGL utility library (GLU)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libglu1-mesa-dev:amd64\'a0\'a0\'a0\'a0\'a0 9.0.0-2.1\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa OpenGL utility library -- development files
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 rc\'a0 libopenvg1-mesa:amd64\'a0\'a0\'a0\'a0\'a0\'a0 10.1.3-0ubuntu0.6\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 free implementation of the OpenVG API -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libosmesa6:amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa Off-screen rendering extension
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libosmesa6:i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa Off-screen rendering extension
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libwayland-egl1-mesa:amd64\'a0 11.2.0-1ubuntu2.2\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 implementation of the Wayland EGL platform -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 libwayland-egl1-mesa:i386\'a0\'a0 11.2.0-1ubuntu2.2\'a0 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 implementation of the Wayland EGL platform -- runtime
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 
+\f2\b \cf5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 mesa-common-
+\f1\b0 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 dev:amd64\'a0\'a0\'a0\'a0\'a0\'a0 13.0.4-1ubuntu1~16 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Developer documentation for Mesa
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 mesa-glide2-dev\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 mesa-utils\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 8.3.0-1\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Miscellaneous Mesa GL utilities
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 mesa-vdpau-drivers:amd64\'a0\'a0\'a0 11.2.0-1ubuntu2.2\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa VDPAU video acceleration drivers
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 mesa-vdpau-drivers:i386\'a0\'a0\'a0\'a0 11.2.0-1ubuntu2.2\'a0 i386\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Mesa VDPAU video acceleration drivers
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 mesag-dev\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 mesag3\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 mesag3+ggi-dev\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 mir-client-platform-mesa-de 0.21.0+16.04.20160 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Display server for Ubuntu - client platform library for Mes
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 xlibmesa-dev\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 xlibmesa-gl-dev\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 xlibmesa-glu-dev\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 
+\f1 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 un\'a0 xlibmesa3\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 (no description available)
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa260
+
+\f3 \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 To check glut libraries:
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\pardeftab720\sa260
+
+\f2\b \cf4 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 root@luna:/home/Material/Particles# dpkg -l *glut*
+\f1\b0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Desired=Unknown/Install/Remove/Purge/Hold\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 | Status=Not/Inst/Conf-files/Unpacked/halF-conf/Half-inst/trig-aWait/Trig-pend\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 |/ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ||/ Name\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Version\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 Architecture\'a0\'a0\'a0\'a0\'a0\'a0 Description\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 +++-===========================-==================-==================-===========================================================\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 
+\f2\b \cf5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 freeglut3
+\f1\b0 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 :amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 2.8.1-2\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 OpenGL Utility Toolkit\cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ii\'a0 
+\f2\b \cf5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec5 freeglut3-dev
+\f1\b0 \cf4 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 :amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 2.8.1-2\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 amd64\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 OpenGL Utility Toolkit development files
+\f0 \cb1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+}

@@ -1,0 +1,69 @@
+My particles system creates particles that bounces off the
+edges of the windows, grow in size and fade away.
+
+Initially one particles is created, that bounces around
+the windows and does as described above and is then
+removed from the linked list.
+
+The user can instantly add more particles using the space bar
+which are created randomly around the screen at first, then
+shoot across the window at varying speeds. When a particle
+reaches any boundary of the Window, it reverses direction and
+continues this cycle until the particles fades away and is
+removed from the linked list.
+
+The window is of size 800 x 800, and my particles system
+runs within this configuration window.
+
+Default Number of particles: 1 - User can add more using space bar
+
+Methods used:
+###########################################
+INITIALIZATION:
+- all particle start with a random colour and size 5.
+    p->col.r = (rand() % 10) * 0.10;
+    p->col.g = (rand() % 10) * 0.10;
+    p->col.b = (rand() % 10) * 0.10;
+    p->col.a = 1;
+
+    p->size = 5;
+- The particles start at random positions
+    p->pos = random_pos(p->pos,-400, 400);
+
+- These particles move and random direction and speed
+    p->dir = random_vec(p->dir, -10, 10);
+    p->spd.x = p->spd.y = p->spd.z = 0.5 + rand() % 2;
+
+############################################
+HOW THE PARTICLES CHANGE:
+- How the particle moves and changes direction when it
+  hits the boundary:
+      curr->pos.x += (curr->spd.x * curr->dir.x);
+      if(curr-> pos.x > 400 || curr-> pos.x < -400){
+           curr-> dir.x *= -1;
+      }
+
+      curr->pos.y += (curr->spd.y * curr->dir.y);
+      if(curr-> pos.y > 400 || curr-> pos.y < -400){
+           curr-> dir.y *= -1;
+      }
+
+- How the particles change size and, fade, and are removed:
+        /* increase size and decrease opacity*/
+        curr->size += 0.1;
+        curr->col.a -= 0.003;
+
+        /* kill particle if particle has fully faded */
+        if (curr->col.a <= 0) {
+            particle_remove(curr);
+        }
+##############################################
+
+Time Testing: Create, Animate and Finish:
+-------------------------------------------
+Number of Particles |  Time:
+-------------------------------------------
+0500 particles:         29  sec 76 millisec
+1000 particles:         55  sec 59 millisec
+2000 particles:         113 sec 24 millisec
+-------------------------------------------

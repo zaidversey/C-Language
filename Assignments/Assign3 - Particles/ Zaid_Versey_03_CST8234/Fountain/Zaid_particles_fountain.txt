@@ -1,0 +1,67 @@
+My particle system models a fountain.
+
+The particles emerge from the center of the window at
+point (0,0,0), shoot upward in random directions, then falls
+to the ground. While the particles is falling it grows in size
+and becomes more opaque - to give a 3D illusion. The fountain
+looks like the particles are falling towards you(the user).
+
+When a particle hits the ground (bottom of the window),
+that particle is reinitialized, and shoots off the middle
+of the screen again, in a continuous cycles. The fountain
+never finishes. The particles are recycled.
+
+The user can add more particles using the space bar, and
+the process described above follows.
+
+The window is of size 800 x 800, and my particles system
+runs within this configuration window.
+
+Default Number of particles: 1 - User can add more using space bar
+
+Methods used:
+###########################################
+INITIALIZATION:
+- all particle start with a random colour and size 5.
+    p->col.r = (rand() % 10) * 0.10;
+    p->col.g = (rand() % 10) * 0.10;
+    p->col.b = (rand() % 10) * 0.10;
+    p->col.a = 1;
+
+    p->size = 5;
+- The particles start at center of window
+    p->pos.x = 0;
+    p->pos.y = 0;
+    p->pos.z = 0;
+
+- These particles move random x direction and upwards y direction
+    p->dir.x = ( -5 + rand() % ( 5 - (-5) + 1 ) );
+    p->dir.y = 10;
+    p->dir.z = -10;
+
+These particles shoot off at random speeds
+p->spd.x = (rand() % 5) * 0.10;
+p->spd.y = (rand() % 5) * 0.10;
+p->spd.z = 0.1;
+
+############################################
+HOW THE PARTICLES CHANGE:
+- How the particles move
+        /* Update x position */
+        curr->pos.x += (curr->spd.x * curr->dir.x);
+
+        /* Update y position */
+        curr->pos.y += (curr->spd.y * curr->dir.y);
+
+- How the particle reinitialize when it hits bottom boundary:
+        if ( curr->pos.y < -400) {
+            particle_init(curr);
+        }
+
+- How the particles change size,spd,dir and fade:
+        curr->dir.z += 0.2;
+        curr->col.a += 0.01;
+        curr->dir.y -= 0.2;
+        curr->spd.y += 0.02;
+        curr->size += 0.05;
+##############################################
